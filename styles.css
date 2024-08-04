@@ -14,11 +14,14 @@ body, html {
     color: rgb(126, 119, 119);
   }
   .container {
-    display: grid;
     position: relative;
-    width: 80%;
-    margin: auto;
-    
+    height: 100vh;
+    background-image: url('images/INDIAN RESTO BAR.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .image {
     width: 100%;
