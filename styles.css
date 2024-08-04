@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    background-color: #cac5c5;
+    color: rgb(126, 119, 119);
+  }
+  .container {
+    display: grid;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    
+  }
+  .image {
+    width: 100%;
+    display: block;
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+  }
+  .background-image {
+    width: 100%;
+    display: block;
+  }
+  .menu {
+   padding: 10px;
+   font-size: 30px;
+}
+
+
+/* menu styles */
+.background-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('images/backGroundImg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ul {
+    list-style-type: none;
+    padding: 0;
+} */
+ 
+li {
+    margin: 5px 0;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+ 
+.details {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 20px;
+}

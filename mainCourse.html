@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Over Background Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="prev" onclick="prevImageFromMenu()">&#10094;</div>
+        <!-- <div class="text-overlay">
+            <a><li class="menu" onclick="Bruschetta()">Bruschetta</li></a>
+            <a><li class="menu" onclick="Bruschetta()">Stuffed Mushrooms</li></a>
+            <a><li class="menu" onclick="Bruschetta()">Garlic Bread</li></a>
+        </ul> -->
+        <section>
+            <div class="text-overlay">
+            <h2 class="menu" >Appetizers</h2>
+            <ul>
+                <li class="menu" onclick="toggleDetails(this)">
+                    Bruschetta
+                    <div class="details">
+                        <p>Rate: $100</p>
+                        <p>Discount: 10% off</p>
+                        <p style="color: rgb(57, 187, 45);">Available</p>
+                        <p>Description: Grilled bread with tomato topping</p>
+                    </div>
+                </li>
+                <li class="menu" onclick="toggleDetails(this)">
+                    Stuffed Mushrooms
+                    <div class="details">
+                        <p>Rate: $150</p>
+                        <p>Discount: 5% off</p>
+                        <p  style="color: rgb(199, 45, 45);">Not Available</p>
+                        <p>Description: Mushrooms stuffed with cheese</p>
+                    </div>
+                </li>
+                <li class="menu" onclick="toggleDetails(this)">
+                    Garlic Bread
+                    <div class="details">
+                        <p>Rate: $200</p>
+                        <p>Discount: 15% off</p>
+                        <p style="color: rgb(199, 45, 45);">Available</p>
+                        <p>Description: Garlic flavored bread</p>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
